@@ -17,7 +17,7 @@ if [[ "$TRAVIS_BRANCH" == "master" ]]; then
   # chmod 600 /root/.ssh
   # ssh-keyscan github.com >> /root/.ssh/known_hosts
   env
-  git remote set-url origin https://${GITHUB_NAME}:${GITHUB_TOKEN}@github.com/ozbillwang/release-it
+  git remote set-url origin https://${GITHUB_NAME}:${GITHUB_TOKEN}@github.com/ozbillwang/release-it.git
   echo "Set github Username & Email"
   git config user.name "ci"
   git config user.email "ci"
