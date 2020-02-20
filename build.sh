@@ -13,9 +13,9 @@ echo ${NEXT_TAG}
 
 if [[ "$TRAVIS_BRANCH" == "master" ]]; then
   # push the tag
-  mkdir /root/.ssh
-  chmod 600 /root/.ssh
-  ssh-keyscan github.com >> /root/.ssh/known_hosts
+  # mkdir /root/.ssh
+  # chmod 600 /root/.ssh
+  # ssh-keyscan github.com >> /root/.ssh/known_hosts
   echo "Set github Username & Email"
   git config user.name "ci"
   git config user.email "ci"
